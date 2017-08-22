@@ -414,10 +414,7 @@ State
     margin-left: 8px;
     margin-top: 75px;
   }
-}
 
-@media (min-width: 53.125em) {
-  /* 850px */
   .search-form {
     max-width: 20em;
     width: 100%;
