@@ -399,11 +399,6 @@ State
     width: 40px;
   }
 
-  .sidebar {
-    margin-right: 8px;
-    height: 18em;
-  }
-
   .grid {
     margin-top: 1em;
     grid-template-columns: 2fr 1fr;
@@ -413,6 +408,11 @@ State
   .repos {
     margin-left: 8px;
     margin-top: 75px;
+  }
+
+  .sidebar {
+    margin-right: 8px;
+    height: 19.75em;
   }
 }
 
