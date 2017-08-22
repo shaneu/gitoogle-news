@@ -368,7 +368,7 @@ State
   }
 
   .search-form {
-    max-width: 10em;
+    max-width: 20em;
     width: 100%;
   }
 }
@@ -413,11 +413,6 @@ State
   .repos {
     margin-left: 8px;
     margin-top: 75px;
-  }
-
-  .search-form {
-    max-width: 20em;
-    width: 100%;
   }
 }
 
