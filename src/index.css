@@ -290,6 +290,10 @@ Modal
   width: 60px;
 }
 
+.modal-button:focus {
+  border-color: #3b78e7;
+}
+
 .modal-panel {
   align-self: center;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
@@ -354,6 +358,10 @@ State
   transition: color .2s ease-in-out;
 }
 
+.personal-picture {
+  display: none;
+}
+
 @media (min-width: 34.375em) {
   h1 {
     font-size: 2em;
@@ -378,11 +386,14 @@ State
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.19);
   }
 
-  .personal-picture {
+  .personal-picture-link {
     align-self: center;
-    background-image: url("https://lh3.googleusercontent.com/-xlgSXthR9NU/AAAAAAAAAAI/AAAAAAAAAAA/AMp5VUpaOEY4oPYFLiNUd6TBD6pWI3D73g/s192-c-mo/photo.jpg");
+  }
+
+  .personal-picture {
     background-size: cover;
     border-radius: 50%;
+    display: block;
     height: 40px;
     margin-right: 2em;
     width: 40px;

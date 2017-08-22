@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 class Modal extends Component {
+  componentDidMount = () => {
+    this.button.focus();
+  };
+
   copyToClipboard = () => {
     const textInput = document.createElement('input');
     textInput.value = this.props.linkText;
@@ -31,12 +35,18 @@ class Modal extends Component {
         tabIndex={0}
         onClick={this.closeModal}
       >
-        <div id="inner-modal" className="modal-panel">
+        <div id="inner-modal" role="dialog" className="modal-panel">
           <p>
             <a href={this.props.linkText} className="modal-text" target="_blank" rel="noopener noreferrer">
               {this.props.linkText}
             </a>
-            <button onClick={this.copyToClipboard} className="button modal-button">
+            <button
+              onClick={this.copyToClipboard}
+              className="button modal-button"
+              ref={button => {
+                this.button = button;
+              }}
+            >
               Copy
             </button>
           </p>

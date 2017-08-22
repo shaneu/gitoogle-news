@@ -43,7 +43,13 @@ class Header extends Component {
             autoComplete="off"
           />
         </form>
-        <div className="personal-picture" />
+        <a href="https://github.com/shaneu" target="_blank" rel="noopener noreferrer" className="personal-picture-link">
+          <img
+            alt="Shane Unger"
+            className="personal-picture"
+            src="https://lh3.googleusercontent.com/-xlgSXthR9NU/AAAAAAAAAAI/AAAAAAAAAAA/AMp5VUpaOEY4oPYFLiNUd6TBD6pWI3D73g/s192-c-mo/photo.jpg"
+          />
+        </a>
       </header>
     );
   }
